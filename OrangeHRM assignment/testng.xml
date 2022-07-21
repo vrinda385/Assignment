@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="TestOrangeHRM">
+      <classes>
+      <class name="assignmentLogin.OrangeHRMmethods"/>
+    </classes>
+     </test> <!-- TestOrangeHRM -->
+     
+    <test thread-count="1" name="Testmethods">
+    <classes><class name="assignmentLogin.AssignmentOrangeHRM"></class></classes>
+  </test> <!-- TestOrangeHRM -->
+  
+    <test thread-count="3" name="TestOrangeHRMXmL">
+    <parameter name="name" value="Admin"></parameter>
+    <parameter name="password" value="admin123"></parameter>
+    <classes>
+    <class name = "assignmentLogin.AssignmentXML"></class>
+    </classes>
+    </test>
+    
+     <test thread-count="1" name="TestOrangeHRMXmL2">
+    <parameter name="name" value="xyz"></parameter>
+    <parameter name="password" value="abc123"></parameter>
+    <classes>
+    <class name = "assignmentLogin.AssignmentXML"></class>
+    </classes>
+    </test>
+
+
+</suite> <!-- Suite -->
